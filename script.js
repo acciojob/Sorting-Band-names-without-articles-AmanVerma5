@@ -37,3 +37,10 @@ let finalAns = updatedList.map((element) => {
 
 // Output the final array of place names
 console.log(finalAns); 
+
+let div=document.getElementById("band");
+finalAns.forEach((element)=>{
+	let newdiv=document.createElement("li");
+	newdiv.innerText=element;
+	div.append(newdiv);
+})
